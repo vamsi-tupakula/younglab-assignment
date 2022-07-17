@@ -1,0 +1,57 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+    margin-bottom: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+    gap: 8px;
+    width: auto;
+    background-color: #FFFFFF;
+    /* Medium Shadow */
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card .name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 135%;
+    color: #000000;
+}
+
+.card .email {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    /* identical to box height, or 22px */
+
+
+    color: #E16259;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.active {
+    background-color: #A259FF !important;
+}
+
+.active>* {
+    color: #ffffff !important;
+}
