@@ -1,6 +1,7 @@
 .major-card {
     width: 996px;
-    height: 291px;
+    height: auto;
+    padding: 38px 10px;
     background: #FFFFFF;
     margin-top: 20px;
     margin-bottom: 6rem;
@@ -51,4 +52,46 @@
 
 .major-card .text .gender {
     color: #8A8A8A;
+}
+
+/* code to make website responsive */
+
+@media screen and (max-width: 1040px) {
+    .major-card {
+        width: 750px;
+    }
+    .major-card .text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .major-card {
+        width: 550px;
+    }
+    .major-card .text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .major-card {
+        width: 400px;
+        flex-direction: column;
+    }
+    .major-card .img{
+        margin: 10px 0;
+    }
+    .major-card .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .major-card {
+        width: 330px;
+    }
+    .major-card .text h1 {
+        font-size: 1.2rem;
+    }
 }

@@ -33,3 +33,13 @@
 .navbar .links .active-link {
     border-bottom: 2px solid #E16259;
 }
+
+/* code to make website responsive */
+
+@media screen and (max-width: 440px) {
+    .navbar {
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 40px;
+    }
+}
